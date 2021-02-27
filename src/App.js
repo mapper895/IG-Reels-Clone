@@ -1,4 +1,5 @@
 import "./App.css";
+import VideoCard from "./VideoCard";
 
 function App() {
   return (
@@ -12,7 +13,11 @@ function App() {
         <h1>Reels</h1>
       </div>
 
-      <div className="app__videos"></div>
+      <div className="app__videos">
+        <VideoCard />
+        <VideoCard />
+        <VideoCard />
+      </div>
     </div>
   );
 }
