@@ -5,12 +5,10 @@ import CameraAltOutlinedIcon from "@material-ui/icons/CameraAltOutlined";
 
 function VideoHeader() {
   return (
-    <div>
-      <div className="videoHeader">
-        <ArrowBackIosIcon />
-        <h3>Reels</h3>
-        <CameraAltOutlinedIcon />
-      </div>
+    <div className="videoHeader">
+      <ArrowBackIosIcon />
+      <h3>Reels</h3>
+      <CameraAltOutlinedIcon />
     </div>
   );
 }
