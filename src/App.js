@@ -24,16 +24,19 @@ function App() {
 
       <div className="app__videos">
         {reels &&
-          reels.map(({ channel, avatarSrc, song, url, likes, shares }) => (
-            <VideoCard
-              channel={channel}
-              avatarSrc={avatarSrc}
-              song={song}
-              url={url}
-              likes={likes}
-              shares={shares}
-            />
-          ))}
+          reels.map(
+            ({ channel, avatarSrc, song, url, likes, shares }, index) => (
+              <VideoCard
+                channel={channel}
+                avatarSrc={avatarSrc}
+                song={song}
+                url={url}
+                likes={likes}
+                shares={shares}
+                key={index}
+              />
+            )
+          )}
       </div>
     </div>
   );
